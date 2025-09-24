@@ -1,6 +1,5 @@
 # uk-energy-dashboard
-Streamlit-based dashboard for UK final energy consumption visualization
-# uk-energy-dashboard
+英国能源仪表盘
 
 A Streamlit-powered dashboard to explore **UK final energy consumption** with interactive trends, year-to-year comparisons, and one-click PDF export.
 
@@ -9,7 +8,20 @@ A Streamlit-powered dashboard to explore **UK final energy consumption** with in
 
 ---
 
-## ✨ Features
+## Overview
+
+This project integrates official UK energy statistics with interactive visual analytics to help researchers, policy analysts, and the general public understand how energy use changes over time and across sectors.
+
+The dashboard lets you:
+-Filter by sector, fuel, and year range
+-Inspect time-series trends with auto-highlighted anomalies
+-Compare two years side-by-side (Δ in ktoe and %)
+-Estimate cost by converting ktoe → kWh and applying a configurable unit price
+-Export a multi-page PDF report (KPI sparkline, comparison tables, change bars, and auto-generated highlights)
+
+---
+
+## Features
 
 - **Interactive Trend View** – filter by sector/fuel and explore multi-year consumption trends.  
 - **Year-to-Year Comparison** – compare adjacent years side-by-side and see deltas immediately.  
@@ -20,7 +32,7 @@ A Streamlit-powered dashboard to explore **UK final energy consumption** with in
 
 ---
 
-## 🧪 User Evaluation (Questionnaire)
+## User Evaluation (Questionnaire)
 
 A short **questionnaire-based user evaluation** validated usability and usefulness with non-expert users.
 
@@ -32,17 +44,16 @@ A short **questionnaire-based user evaluation** validated usability and usefulne
 
 ---
 
-## 🖼️ Screenshots
+## Tech Stack
 
-| Trend View | Year-to-Year Comparison | PDF Export |
-|---|---|---|
-| ![Trend](screenshots/Trend%20View.png) | ![Y2Y](screenshots/Year-to-Year%20Comparison.png) | ![PDF](screenshots/PDF%20Export.png) |
-
-> Place images in the `screenshots/` folder with the above filenames (spaces URL-encoded as shown) so links resolve.
+- **App:** Python, **Streamlit**  
+- **Viz:** Altair/Plotly (via Streamlit), PDF export utilities  
+- **Data:** ECUK (UK Govt / BEIS) + curated CSV/XLSX  
+- **Repro:** `requirements.txt`
 
 ---
 
-## 🗂️ Project Structure
+## Project Structure
 ```
 uk-energy-dashboard/
 ├─ .devcontainer/ # Dev container config (optional)
@@ -61,16 +72,15 @@ uk-energy-dashboard/
 
 ---
 
-## 🛠️ Tech Stack
+## Screenshots
 
-- **App:** Python, **Streamlit**  
-- **Viz:** Altair/Plotly (via Streamlit), PDF export utilities  
-- **Data:** ECUK (UK Govt / BEIS) + curated CSV/XLSX  
-- **Repro:** `requirements.txt`
+| Trend View | Year-to-Year Comparison | PDF Export |
+|---|---|---|
+| ![Trend](screenshots/Trend%20View.png) | ![Y2Y](screenshots/Year-to-Year%20Comparison.png) | ![PDF](screenshots/PDF%20Export.png) |
 
 ---
 
-## ▶️ How to Use
+## How to Use
 
 ### Option A — Use the hosted app *(recommended)*
 Open: **https://uk-energy-dashboard-56xuus4qga5eeb8zpa7dh5.streamlit.app/**
@@ -95,7 +105,7 @@ streamlit run dashboard_app.py
 
 ---
 
-## 📊 Data & Pre-processing
+## Data & Pre-processing
 
 Primary data: ECUK 2024 consumption tables (`ECUK_2024_Consumption_tables.xlsx`, `TableC2023.xlsx`).  
 
@@ -113,7 +123,7 @@ Electricity price references are provided for contextual analyses.
 
 ---
 
-## 🗓️ Timeline
+## Timeline
 
 | Period   | Task                                  |
 |----------|---------------------------------------|
@@ -124,16 +134,26 @@ Electricity price references are provided for contextual analyses.
 
 ---
 
-## ✅ Roadmap
+## Data Sources
 
-- More sector presets & saved filter states  
-- Additional contextual indicators (e.g., economic/weather normalization)  
-- CSV export with current filters  
-- Accessibility & keyboard navigation improvements  
+UK final energy consumption tables (ECUK / DUKES / Table C series)
+Used for sector & fuel breakdowns; cleaned into Standardized_Energy_Data.csv.
+
+Exact table versions are listed in the repo (e.g., ECUK_2024_Consumption_tables.xlsx, TableC2023.xlsx).
+This project is for academic use; please refer to the official publications for authoritative figures.
 
 ---
 
-## 👩‍💻 Author
+## Future Work
+
+-Add scenario modelling (e.g., fuel switching, price sensitivity, sector policies)
+-Enrich anomaly logic (seasonality, SARIMAX residuals)
+-Add forecasting (Prophet / sklearn pipelines)
+-Optional auth + saved dashboards for repeat users
+
+---
+
+## Author
 Xinyu Dai
 
 Email: xinyudai2002.career@gmail.com
