@@ -44,7 +44,7 @@ A short **questionnaire-based user evaluation** validated usability and usefulne
 
 ## Tech Stack
 
-- **App:** Python, **Streamlit**  
+- **App:** Python, Streamlit 
 - **Viz:** Altair/Plotly (via Streamlit), PDF export utilities  
 - **Data:** ECUK (UK Govt / BEIS) + curated CSV/XLSX  
 - **Repro:** `requirements.txt`
