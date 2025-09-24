@@ -103,15 +103,6 @@ streamlit run dashboard_app.py
 ```
 
 
-## Timeline
-
-| Period   | Task                                  |
-|----------|---------------------------------------|
-| Jun 2025 | Topic selection & literature review   |
-| Jul 2025 | Data collection & system architecture |
-| Aug 2025 | System development & user evaluation  |
-| Sep 2025 | Final optimization & feature testing  |
-
 ---
 
 ## Data Sources
