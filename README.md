@@ -3,8 +3,7 @@
 
 A Streamlit-powered dashboard to explore **UK final energy consumption** with interactive trends, year-to-year comparisons, and one-click PDF export.
 
-**Live app:** https://uk-energy-dashboard-56xuus4qga5eeb8zpa7dh5.streamlit.app/  
-*(No local setup required — open and use in the browser.)*
+**Live app:** https://uk-energy-dashboard-56xuus4qga5eeb8zpa7dh5.streamlit.app/  *(No local setup required — open and use in the browser.)*
 
 ---
 
