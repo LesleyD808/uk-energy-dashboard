@@ -3,7 +3,7 @@
 
 A Streamlit-powered dashboard to explore **UK final energy consumption** with interactive trends, year-to-year comparisons, and one-click PDF export.
 
-**🔗 Live app:** https://uk-energy-dashboard-56xuus4qga5eeb8zpa7dh5.streamlit.app/  
+**Live app:** https://uk-energy-dashboard-56xuus4qga5eeb8zpa7dh5.streamlit.app/  
 *(No local setup required — open and use in the browser.)*
 
 ---
@@ -13,11 +13,12 @@ A Streamlit-powered dashboard to explore **UK final energy consumption** with in
 This project integrates official UK energy statistics with interactive visual analytics to help researchers, policy analysts, and the general public understand how energy use changes over time and across sectors.
 
 The dashboard lets you:
--Filter by sector, fuel, and year range
--Inspect time-series trends with auto-highlighted anomalies
--Compare two years side-by-side (Δ in ktoe and %)
--Estimate cost by converting ktoe → kWh and applying a configurable unit price
--Export a multi-page PDF report (KPI sparkline, comparison tables, change bars, and auto-generated highlights)
+
+- Filter by sector, fuel, and year range
+- Inspect time-series trends with auto-highlighted anomalies
+- Compare two years side-by-side (Δ in ktoe and %)
+- Estimate cost by converting ktoe → kWh and applying a configurable unit price
+- Export a multi-page PDF report (KPI sparkline, comparison tables, change bars, and auto-generated highlights)
 
 ---
 
@@ -103,7 +104,6 @@ pip install -r requirements.txt
 # 4) Launch the app
 streamlit run dashboard_app.py
 
----
 
 ## Data & Pre-processing
 
@@ -113,15 +113,6 @@ Cleaning/standardization workflow lives in `preprocess_energy_data.py` and produ
 
 Electricity price references are provided for contextual analyses.
 
----
-
-## 🔍 Key Pages
-
-- **Trend View** – long-term consumption with filters & hover cues.  
-- **Year-to-Year Comparison** – adjacent-year deltas to surface changes quickly.  
-- **Report Export** – generate a PDF snapshot of the current state.  
-
----
 
 ## Timeline
 
