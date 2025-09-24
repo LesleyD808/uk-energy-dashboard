@@ -1,4 +1,4 @@
-# uk-energy-dashboard
+# ⚡uk-energy-dashboard
 英国能源仪表盘
 
 A Streamlit-powered dashboard to explore **UK final energy consumption** with interactive trends, year-to-year comparisons, and one-click PDF export.
