@@ -103,15 +103,7 @@ pip install -r requirements.txt
 
 # 4) Launch the app
 streamlit run dashboard_app.py
-
-
-## Data & Pre-processing
-
-Primary data: ECUK 2024 consumption tables (`ECUK_2024_Consumption_tables.xlsx`, `TableC2023.xlsx`).  
-
-Cleaning/standardization workflow lives in `preprocess_energy_data.py` and produces `Standardized_Energy_Data.csv` used by the app.  
-
-Electricity price references are provided for contextual analyses.
+```
 
 
 ## Timeline
@@ -132,6 +124,17 @@ Used for sector & fuel breakdowns; cleaned into Standardized_Energy_Data.csv.
 
 Exact table versions are listed in the repo (e.g., ECUK_2024_Consumption_tables.xlsx, TableC2023.xlsx).
 This project is for academic use; please refer to the official publications for authoritative figures.
+
+---
+
+## Timeline
+
+| Period   | Task                                  |
+|----------|---------------------------------------|
+| Jun 2025 | Topic selection & literature review   |
+| Jul 2025 | Data collection & system architecture |
+| Aug 2025 | System development & user evaluation  |
+| Sep 2025 | Final optimization & feature testing  |
 
 ---
 
