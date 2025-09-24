@@ -54,16 +54,17 @@ A short **questionnaire-based user evaluation** validated usability and usefulne
 ## Project Structure
 ```
 uk-energy-dashboard/
-├─ .devcontainer/ # Dev container config (optional)
-├─ User Study/ # Questionnaire + anonymized feedback
-├─ ECUK_2024_Consumption_tables.xlsx # Primary source (ECUK 2024)
-├─ TableC2023.xlsx # Supplemental table
-├─ Standardized_Energy_Data.csv # Cleaned & standardized dataset
-├─ electricitypricesdataset240725.xlsx # Electricity price reference (supporting)
-├─ static_price.xlsx # Static price table (supporting)
-├─ preprocess_energy_data.py # Data cleaning & standardization
-├─ dashboard_app.py # Streamlit application (entry point)
-├─ requirements.txt # Python dependencies
+├─ .devcontainer/                        # Dev container config (optional)
+├─ User Study/                           # Questionnaire + anonymized feedback
+├─ ECUK_2024_Consumption_tables.xlsx     # Primary source (ECUK 2024)
+├─ TableC2023.xlsx                       # Supplemental table
+├─ Standardized_Energy_Data.csv          # Cleaned & standardized dataset
+├─ electricitypricesdataset240725.xlsx   # Electricity price reference (supporting)
+├─ static_price.xlsx                     # Static price table (supporting)
+├─ preprocess_energy_data.py             # Data cleaning & standardization
+├─ dashboard_app.py                      # Streamlit application (entry point)
+├─ requirements.txt                      # Python dependencies
+├── screenshots/                         # UI demo images
 └─ README.md
 ```
 
