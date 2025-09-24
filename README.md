@@ -41,8 +41,6 @@ A short **questionnaire-based user evaluation** validated usability and usefulne
 - Feedback focused on the clarity of the **Trend View**, usefulness of **Year-to-Year** comparison, and the value of **PDF export** for coursework/reports.  
 - Suggestions implemented: clearer legends, persistent filters across pages, and additional sector presets.
 
-> The questionnaire materials (form and anonymized responses) are in **`/User Study/`**.
-
 ---
 
 ## Tech Stack
@@ -140,10 +138,10 @@ This project is for academic use; please refer to the official publications for 
 
 ## Future Work
 
--Add scenario modelling (e.g., fuel switching, price sensitivity, sector policies)
--Enrich anomaly logic (seasonality, SARIMAX residuals)
--Add forecasting (Prophet / sklearn pipelines)
--Optional auth + saved dashboards for repeat users
+- Add scenario modelling (e.g., fuel switching, price sensitivity, sector policies)
+- Enrich anomaly logic (seasonality, SARIMAX residuals)
+- Add forecasting (Prophet / sklearn pipelines)
+- Optional auth + saved dashboards for repeat users
 
 ---
 
